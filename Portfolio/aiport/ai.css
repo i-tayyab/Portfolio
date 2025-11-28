@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #e9f1ff, #f8faff);
+    color: #333;
+}
+
+.nav {
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.5);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #d0d7e2;
+}
+
+.logo {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #3a3eeb;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 10px;
+}
+
+.pfp {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid #8a68f0;
+    box-shadow: 0 0 18px rgba(138, 104, 240, 0.4);
+}
+
+.name {
+    margin-top: 15px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.tagline {
+    color: #555;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 14px;
+    padding: 0;
+    margin-bottom: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(200, 200, 255, 0.4);
+}
+
+.acc-btn {
+    width: 100%;
+    padding: 18px;
+    font-size: 17px;
+    background: rgba(138, 104, 240, 0.9);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 14px 14px 0 0;
+}
+
+.acc-btn:hover {
+    background: #6d4ce3;
+}
+
+.acc-content {
+    display: none;
+    padding: 15px 20px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 0 0 14px 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    margin-top: 30px;
+    color: #666;
+}

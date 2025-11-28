@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tayyab | Creative Graphic Designer Portfolio</title>
+    <meta name="description" content="Tayyab - Creative Graphic Designer specializing in brand identity, UI/UX design, and visual storytelling.">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Tayyab | Creative Graphic Designer">
+    <meta property="og:description" content="Professional Graphic Designer specializing in brand identity, UI/UX design, and visual storytelling.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="mine.jpeg">
+    
+    <link rel="canonical" href="https://yourdomain.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="des4.css">
+        
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <header>
+        <nav id="navbar">
+            <div class="nav-container">
+                <div class="logo">DESIGNER</div>
+                
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="site-nav">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                    <span class="sr-only">Menu</span>
+                </button>
+                
+                <ul class="nav-links" id="site-nav">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="bg-shapes">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content" id="main-content">
+                <div class="profile-image-container">
+                    <img 
+                        src="/mine.jpeg" 
+                        alt="Professional headshot of Tayyab, a creative graphic designer" 
+                        class="profile-image"
+                        width="300"
+                        height="300"
+                        loading="eager">
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">Hello, I'm <span class="gradient-text">Tayyab</span></h1>
+                    <p class="hero-subtitle">Graphic Designer</p>
+                    <p class="hero-description">
+                        A passionate <strong>Graphic Designer</strong> creating compelling visual experiences that blend creativity with strategic thinking.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#portfolio" class="btn btn-outline">View My Work</a>
+                        <a href="/MYres.pdf" class="btn btn-outline">My Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            
+            <div class="portfolio-filters-container">
+                <div class="portfolio-filters" role="tablist" aria-label="Filter portfolio projects">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" aria-controls="portfolio-grid">
+                        All
+                    </button>
+                    <button class="filter-btn" data-filter="branding" role="tab" aria-selected="false" aria-controls="portfolio-grid">
+                        Branding
+                    </button>
+                    <button class="filter-btn" data-filter="web" role="tab" aria-selected="false" aria-controls="portfolio-grid">
+                        Web Design
+                    </button>
+                    <button class="filter-btn" data-filter="print" role="tab" aria-selected="false" aria-controls="portfolio-grid">
+                        Print
+                    </button>
+                </div>
+            </div>
+            
+            <div class="portfolio-grid" id="portfolio-grid" role="tabpanel">
+                <!-- Only 3 projects shown initially on mobile -->
+                <div class="portfolio-item" data-category="branding" tabindex="0">
+                    <div class="portfolio-img portfolio-img--gradient-1"></div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Brand Identity</h3>
+                        <p class="portfolio-category">Branding • Logo Design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web" tabindex="0">
+                    <div class="portfolio-img portfolio-img--gradient-2"></div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">UI/UX Design</h3>
+                        <p class="portfolio-category">Web Design • Mobile App</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web" tabindex="0">
+                    <div class="portfolio-img portfolio-img--gradient-3"></div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Social Media</h3>
+                        <p class="portfolio-category">Instagram • Marketing</p>
+                    </div>
+                </div>
+                
+                <!-- Hidden projects that appear when "View More" is clicked -->
+                <div class="portfolio-item portfolio-item--hidden" data-category="branding" tabindex="0">
+                    <div class="portfolio-img portfolio-img--gradient-4"></div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Packaging Design</h3>
+                        <p class="portfolio-category">Product • Print</p>
+                    </div>
+                </div>
+                <div class="portfolio-item portfolio-item--hidden" data-category="print" tabindex="0">
+                    <div class="portfolio-img portfolio-img--gradient-5"></div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Illustration</h3>
+                        <p class="portfolio-category">Digital Art • Character</p>
+                    </div>
+                </div>
+                <div class="portfolio-item portfolio-item--hidden" data-category="print" tabindex="0">
+                    <div class="portfolio-img portfolio-img--gradient-6"></div>
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Print Design</h3>
+                        <p class="portfolio-category">Poster • Brochure</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-more">
+                <button id="expandPortfolioBtn" class="btn-outline portfolio-expand-btn with-icon" aria-expanded="false">
+                    <span>View More Projects</span>
+                    <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                        <path d="M8 12L2 6l1.4-1.4L8 9.2l4.6-4.6L14 6l-6 6z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="reveal">
+        <div class="container">
+            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Creative Designer</h3>
+                    <p>
+                        With 3+ years of experience in graphic design, I specialize in creating compelling visual identities that resonate with audiences. My passion lies in blending creativity with strategic thinking.
+                    </p>
+                    <p>
+                        I've worked with diverse clients across industries, helping them stand out in competitive markets through innovative design solutions.
+                    </p>
+                    <a href="#contact" class="btn btn-primary">Let's Collaborate</a>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">14+</div>
+                        <div class="stat-text">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-text">Years</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">12+</div>
+                        <div class="stat-text">Clients</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>My Skills & Services</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-palette" aria-hidden="true"></i>
+                            </div>
+                            <div>Brand Identity</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-laptop-code" aria-hidden="true"></i>
+                            </div>
+                            <div>UI/UX Design</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                            </div>
+                            <div>Logo Design</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-paint-brush" aria-hidden="true"></i>
+                            </div>
+                            <div>Illustration</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-canva" aria-hidden="true"></i>
+                            </div>
+                            <div>Canva</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-adobe" aria-hidden="true"></i>
+                            </div>
+                            <div>Photoshop</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials reveal" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client <span class="gradient-text">Testimonials</span></h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-text">
+                        Tayyab transformed our brand identity completely. The new design perfectly captures our company's values and has significantly improved our brand recognition.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img" style="background-image: url('https://randomuser.me/api/portraits/women/44.jpg')"></div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Marketing Director</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-text">
+                        The website redesign Tayyab delivered exceeded our expectations. Not only does it look fantastic, but user engagement has increased by 40% since launch.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg')"></div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>CEO, Retail Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-text">
+                        We've worked with several designers, but Tayyab stands out for their creativity and professionalism. The packaging design increased our sales by 25%.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img" style="background-image: url('https://randomuser.me/api/portraits/women/68.jpg')"></div>
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <p>Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <div class="slider-dot active" data-slide="0"></div>
+                    <div class="slider-dot" data-slide="1"></div>
+                    <div class="slider-dot" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    Ready to bring your vision to life? Let's create something amazing together.
+                </p>
+                <div class="contact-grid">
+                    <div class="contact-methods">
+                        <a href="mailto:tayyabbashir757@gmail.com" class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">✉</div>
+                            <div class="contact-details">
+                                <div class="contact-label">Email</div>
+                                <div class="contact-info">tayyabbashir757@gmail.com</div>
+                            </div>
+                        </a>
+                        <a href="tel:+923439649610" class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">📞</div>
+                            <div class="contact-details">
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-info">+92 343 9649610</div>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/tayyab--bashir" class="contact-item" target="_blank" rel="noopener noreferrer">
+                            <div class="contact-icon" aria-hidden="true">💼</div>
+                            <div class="contact-details">
+                                <div class="contact-label">LinkedIn</div>
+                                <div class="contact-info">linkedin.com/in/tayyab--bashir</div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="social-section">
+                        <h3>Follow Me</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Behance" target="_blank" rel="noopener noreferrer"><i class="fab fa-behance"></i></a>
+                            <a href="#" aria-label="Dribbble" target="_blank" rel="noopener noreferrer"><i class="fab fa-dribbble"></i></a>
+                            <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>DesignStudio</h3>
+                    <p>Creating compelling visual experiences that help businesses stand out and connect with their audience.</p>
+                    <div class="social-links">
+                        <a href="i-tayyab" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-behance"></i></a>
+                        <a href="#" aria-label="Dribbble" target="_blank" rel="noopener noreferrer"><i class="fab fa-dribbble"></i></a>
+                        <a href="" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/tayyab--bashir" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for design tips and updates.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="Your email address">
+                            <button type="submit" class="btn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Brand Identity</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">Print Design</a></li>
+                        <li><a href="#services">Logo Design</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Tayyab | DesignStudio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="des4.js"></script>
+</body>  
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Developer Portfolio</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="py.css">
+        
+</head>
+<body>
+    <header>
+        <h1 class="title">Python Developer Portfolio</h1>
+        <p class="subtitle">Automation | Backend | Data | Problem Solving</p>
+    </header>
+
+    <div class="profile-box">
+        <img src="/mine.jpeg" alt="Profile" />
+        <div>
+            <h2>Tayyab Bashir</h2>
+            <p>Python Developer passionate about building tools, automation scripts, web backends, and smart data-driven solutions.</p>
+        </div>
+    </div>
+
+    <section class="skills-section">
+        <h2 class="section-title">Core Python Skills</h2>
+
+        <div class="skill">
+            <p class="skill-name">Python Basics & OOP</p>
+            <div class="bar"><div class="bar-fill" data-width="90%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p class="skill-name">APIs & Backend (Flask / FastAPI)</p>
+            <div class="bar"><div class="bar-fill" data-width="75%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p class="skill-name">Data Analysis (Pandas, NumPy)</p>
+            <div class="bar"><div class="bar-fill" data-width="70%"></div></div>
+        </div>
+
+        <div class="skill">
+            <p class="skill-name">Automation / Scripting</p>
+            <div class="bar"><div class="bar-fill" data-width="88%"></div></div>
+        </div>
+
+    </section>
+
+    <section class="projects-section">
+        <h2 class="section-title">Mini Python Projects</h2>
+
+        <button class="toggle-btn" onclick="toggleProjects()">Show / Hide Projects</button>
+
+        <div id="projects" style="display:none;">
+            <div class="project-card">
+                <h3>Automation Script Hub</h3>
+                <p>A collection of Python scripts for file handling, renaming, scraping, and system utilities.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Weather CLI Tool</h3>
+                <p>A terminal-based weather fetcher using open APIs.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Mini Data Analyzer</h3>
+                <p>Simple data cleaning and visualization pipeline using Pandas + Matplotlib.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Python Portfolio — Built by Tayyab
+    </footer>
+
+    <script src="py.js"></script>
+</body>
+</html>

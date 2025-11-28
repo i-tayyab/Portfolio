@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Video Editor — Agency / Cinematic Portfolio</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="editin.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-left">
+        <div class="neon-accent"><b>TAYYAB's </b>  STUDIO • CINEMATIC</div>
+        <h1 class="title">Cinematic Video Editing & Short-Form Reels</h1>
+        <div class="subtitle">I craft cinematic promos, viral shorts, and cinematic ads. Neon-lit visuals, polished cuts, and international agency delivery standards — built for attention and emotion.</div>
+        <div class="meta">Demo reel: <strong>Color grading • Motion design • Sound design</strong></div>
+
+        <div class="panels" style="margin-top:18px">
+          <div class="glass" style="flex:0 0 300px">
+            <h4>Core Tools</h4>
+            <div class="tools">
+              <div class="tag">Premiere</div>
+              <div class="tag">After Effects</div>
+              <div class="tag">Adobe</div>
+              <div class="tag">AI Videos & voice overs</div>
+              <div class="tag">CapCut</div>
+            </div>
+          </div>
+          <div class="glass" style="flex:1">
+            <h4>Specialties</h4>
+            <div class="tools">
+              <div class="tag">Reels & Shorts</div>
+              <div class="tag">Ads</div>
+              <div class="tag">VFX</div>
+              <div class="tag">Cinematic Edits</div>
+              <div class="tag">Color Grading</div>
+              <div class="tag">Youtube Automation Videos</div>
+              <div class="tag">Explainer Videos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Profile image with glow effect -->
+      <div class="profile-container">
+        <div class="profile-glow"></div>
+        <div class="profile-image">
+          <img src="/mine.jpeg" alt="Video Editor Profile">
+        </div>
+      </div>
+    </header>
+
+    <!-- FILTERS -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="reels">Reels</button>
+      <button class="filter-btn" data-filter="ads">Ads</button>
+      <button class="filter-btn" data-filter="cinematic">Cinematic</button>
+      <button class="filter-btn" data-filter="travel">Travel</button>
+      <button class="filter-btn" data-filter="vfx">VFX</button>
+      <button class="filter-btn" data-filter="shorts">Short Films</button>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="slider-wrap">
+      <button class="arrow left" aria-label="previous">&#10094;</button>
+      <div class="row" id="row">
+        <div class="carousel" id="carousel">
+          <!-- Cards: add/replace src and data-category as required -->
+          <div class="card" data-category="reels">
+            <div class="badge">REEL</div>
+            <div class="preview">
+              <video src="video1.mp4" muted playsinline preload="metadata"></video>
+            </div>
+            <div class="meta-card">
+              <h5>Neon Nights — IG Reel</h5>
+              <p>15s social reel • Color grade • Punch cut</p>
+            </div>
+          </div>
+
+          <div class="card" data-category="ads">
+            <div class="badge">AD</div>
+            <div class="preview">
+              <video src="video2.mp4" muted playsinline preload="metadata"></video>
+            </div>
+            <div class="meta-card">
+              <h5>Product Spot — 30s</h5>
+              <p>Agency spec ad • Sound design • VFX</p>
+            </div>
+          </div>
+
+          <div class="card" data-category="cinematic">
+            <div class="badge">CINE</div>
+            <div class="preview">
+              <video src="video3.mp4" muted playsinline preload="metadata"></video>
+            </div>
+            <div class="meta-card">
+              <h5>Trailer Cut</h5>
+              <p>Short trailer edit • Dramatic grade</p>
+            </div>
+          </div>
+
+          <div class="card" data-category="travel">
+            <div class="badge">TRAVEL</div>
+            <div class="preview">
+              <video src="video4.mp4" muted playsinline preload="metadata"></video>
+            </div>
+            <div class="meta-card">
+              <h5>Wander • Travel Reel</h5>
+              <p>Drone & ground cut • Smooth timelapse</p>
+            </div>
+          </div>
+
+          <div class="card" data-category="vfx">
+            <div class="badge">VFX</div>
+            <div class="preview">
+              <video src="video5.mp4" muted playsinline preload="metadata"></video>
+            </div>
+            <div class="meta-card">
+              <h5>Light FX Test</h5>
+              <p>Compositing, CG lights & tracking</p>
+            </div>
+          </div>
+
+          <div class="card" data-category="shorts">
+            <div class="badge">SHORT</div>
+            <div class="preview">
+              <video src="video6.mp4" muted playsinline preload="metadata"></video>
+            </div>
+            <div class="meta-card">
+              <h5>Short Film — Scene</h5>
+              <p>Short film sequence • Dialog & mix</p>
+            </div>
+          </div>
+
+          <!-- repeat or add more cards -->
+        </div>
+      </div>
+      <button class="arrow right" aria-label="next">&#10095;</button>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats">
+      <div class="stat">
+        <h3>5+</h3><p>Videos Delivered</p>
+      </div>
+      <div class="stat">
+        <h3>0+</h3><p>Total Views</p>
+      </div>
+      <div class="stat">
+        <h3>2</h3><p>Agency Clients</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+      <button class="btn" id="contactBtn">Work with me</button>
+      <button class="ghost" id="downloadBtn">Download Reel (MP4)</button>
+      <button class="ghost" id="downloadBtn" href="/MYres.pdf">My Resume</button>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 6L12 13L2 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>tayyabbashir757@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 16.92V19.92C22 20.52 21.53 21.01 20.94 21.06C20.42 21.11 19.89 21.14 19.36 21.14C10.82 21.14 3.86 14.18 3.86 5.64C3.86 5.11 3.89 4.58 3.94 4.06C3.99 3.47 4.48 3 5.08 3H8.08C8.63 3 9.09 3.39 9.14 3.93C9.16 4.25 9.18 4.57 9.2 4.89C9.33 6.39 9.63 7.86 10.09 9.27C10.2 9.61 10.09 9.99 9.82 10.22L8.62 11.42C10.06 14.37 12.63 16.94 15.58 18.38L16.78 17.18C17.01 16.91 17.39 16.8 17.73 16.91C19.14 17.37 20.61 17.67 22.11 17.8C22.43 17.82 22.75 17.84 23.07 17.86C23.61 17.91 24 18.37 24 18.92V21.92C24 22.52 23.53 23.01 22.94 23.06C22.42 23.11 21.89 23.14 21.36 23.14C17.12 23.14 13.06 21.84 9.8 19.44C6.54 17.04 4.26 13.58 3.2 9.64C2.14 5.7 2.36 1.56 3.82 -2H6.82C7.42 -2 7.91 -1.53 7.96 -0.94C8.01 -0.42 8.04 0.11 8.04 0.64C8.04 5.11 11.93 9 16.4 9H18.4C18.93 9 19.46 8.97 19.98 8.92C20.57 8.87 21.06 8.38 21.06 7.78V4.78C21.06 4.23 20.67 3.77 20.13 3.72C19.81 3.7 19.49 3.68 19.17 3.66C17.67 3.53 16.2 3.23 14.79 2.77C14.45 2.66 14.07 2.77 13.84 3.04L12.64 4.24C10.82 3.45 9.15 2.4 7.68 1.12C7.4 0.88 7.02 0.77 6.66 0.84C6.29 0.91 6 1.16 5.86 1.5C5.31 2.87 5 4.32 5 5.8C5 13.26 11.74 20 19.2 20C20.68 20 22.13 19.69 23.5 19.14C23.84 19 24.09 18.71 24.16 18.34C24.23 17.98 24.12 17.6 23.88 17.32C22.6 15.85 21.55 14.18 20.76 12.36L21.96 11.16C22.23 10.91 22.34 10.53 22.23 10.19C21.77 8.78 21.47 7.31 21.34 5.81C21.32 5.49 21.3 5.17 21.28 4.85C21.23 4.31 20.77 3.92 20.22 3.92H17.22C16.62 3.92 16.13 4.39 16.08 4.98C16.03 5.5 16 6.03 16 6.56C16 10.8 17.3 14.86 19.7 18.12C22.1 21.38 25.56 23.66 29.5 24.72C33.44 25.78 37.58 25.56 41.52 24.1H41.52Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p>+92 343 9649610</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Islamabad</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Project Details</label>
+              <textarea id="message" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">Cinematic Editor</div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+          <a href="#privacy">Privacy</a>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23 3.00005C22.0424 3.67552 20.9821 4.19216 19.86 4.53005C19.2577 3.83756 18.4573 3.34674 17.567 3.12397C16.6767 2.90121 15.7395 2.95724 14.8821 3.2845C14.0247 3.61176 13.2884 4.19445 12.773 4.95376C12.2575 5.71308 11.9877 6.61238 12 7.53005V8.53005C10.2426 8.57561 8.50127 8.18586 6.93101 7.39549C5.36074 6.60512 4.01032 5.43868 3 4.00005C3 4.00005 -1 13 8 17C5.94053 18.398 3.48716 19.099 1 19C10 24 21 19 21 7.50005C20.9991 7.2215 20.9723 6.94364 20.92 6.67005C21.9406 5.66354 22.6608 4.39276 23 3.00005Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 11.37C16.1234 12.2022 15.9813 13.0522 15.5938 13.799C15.2063 14.5458 14.5932 15.1514 13.8416 15.5297C13.0901 15.9079 12.2385 16.0396 11.4078 15.9059C10.5771 15.7723 9.80977 15.3801 9.21485 14.7852C8.61993 14.1902 8.22774 13.4229 8.09408 12.5922C7.96042 11.7615 8.09208 10.9099 8.47034 10.1584C8.8486 9.40685 9.4542 8.79374 10.201 8.40624C10.9478 8.01874 11.7978 7.87659 12.63 8C13.4789 8.12588 14.2649 8.52146 14.8717 9.1283C15.4785 9.73515 15.8741 10.5211 16 11.37Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17.5 6.5H17.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2023 Cinematic Video Editor. All rights reserved.
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- modal full preview -->
+  <div class="modal" id="modal"><div class="modal-inner"><video controls id="modalVideo"></video></div></div>
+
+<script src="editin.js"></script>
+</body>
+</html>

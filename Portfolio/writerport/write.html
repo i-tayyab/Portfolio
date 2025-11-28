@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writer Portfolio</title>
+<link rel="stylesheet" href="write.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="logo">WRITER</div>
+</nav>
+
+ <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Writer & Storyteller</h1>
+            <p>
+                I write compelling stories, meaningful articles, powerful critiques,
+                and engaging scripts. My words focus on emotion, clarity, and storytelling depth.
+            </p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+            <a href="/MYres.pdf" class="cta-button">My Resume</a>
+        </div>
+        <div class="author-photo">
+            <div class="photo-frame">
+                <!-- Replace with your actual photo -->
+                <img src="/mine.jpeg" alt="Author portrait">
+            </div>
+        </div>
+    </section>
+
+<!-- ABOUT -->
+<section class="about">
+    <h2>About Me</h2>
+    <p>
+        I explore ideas through writing — whether it's storytelling, detailed analysis,
+        opinion pieces, or creative narratives. My style blends clarity, emotional depth,
+        and memorable flow.
+    </p>
+
+    <button class="expand-btn" onclick="toggleExpand('aboutMore')">Read More</button>
+    <div class="expand-content" id="aboutMore">
+        I write across multiple genres:
+        <br><br>
+        • Fiction & short stories  
+        • Book/film analysis  
+        • Research-based articles  
+        • News & investigative writing  
+        • Scriptwriting & documentary narration  
+        • Opinion and critique pieces  
+        <br><br>
+        My aim is to inform, inspire, and create lasting impact through words.
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills">
+    <h2>Writing Skills</h2>
+
+    <div class="skill-grid">
+        <div class="skill">
+            <h3>Creative Writing</h3>
+            <span>Stories, dialogues, scripts, novels</span>
+        </div>
+        <div class="skill">
+            <h3>Content Writing</h3>
+            <span>SEO content, blogs, website copy</span>
+        </div>
+        <div class="skill">
+            <h3>Critique & Analysis</h3>
+            <span>Film, books, dramas, social topics</span>
+        </div>
+        <div class="skill">
+            <h3>Journalism</h3>
+            <span>News, research, factual reporting</span>
+        </div>
+        <div class="skill">
+            <h3>Scriptwriting</h3>
+            <span>Documentaries, storytelling</span>
+        </div>
+        <div class="skill">
+            <h3>Editing</h3>
+            <span>Proofreading, rewriting, grammar</span>
+        </div>
+    </div>
+</section>
+
+<!-- WRITING PROJECTS -->
+<section class="projects">
+    <h2>Selected Writings</h2>
+
+    <!-- TABS -->
+    <div class="tabs">
+        <div class="tab active" data-filter="fiction">Fiction</div>
+        <div class="tab" data-filter="articles">Articles</div>
+        <div class="tab" data-filter="critics">Critics</div>
+        <div class="tab" data-filter="scripts">Scripts</div>
+    </div>
+
+    <!-- CARDS -->
+    <div class="grid">
+        <div class="card" data-category="fiction">
+            <h3>The Silent Rain</h3>
+            <p>A short story exploring loss, hope, and human emotion.</p>
+        </div>
+
+        <div class="card" data-category="fiction">
+            <h3>Midnight Letters</h3>
+            <p>A fictional narration based on hidden memories.</p>
+        </div>
+
+        <div class="card" data-category="articles">
+            <h3>The Psychology of Modern Stress</h3>
+            <p>A research-backed article about mental burnout.</p>
+        </div>
+
+        <div class="card" data-category="articles">
+            <h3>AI vs Humanity</h3>
+            <p>Insight on how AI impacts creativity and jobs.</p>
+        </div>
+
+        <div class="card" data-category="critics">
+            <h3>Feriha Series Review</h3>
+            <p>A detailed drama analysis focusing on structure and character depth.</p>
+        </div>
+
+        <div class="card" data-category="scripts">
+            <h3>Documentary – The Lost Voices</h3>
+            <p>A storytelling script about forgotten communities.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 Writer Portfolio
+</footer>
+<script src="write.js"></script>
+
+</body>
+</html>
